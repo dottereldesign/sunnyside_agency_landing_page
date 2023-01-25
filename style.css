@@ -27,6 +27,8 @@
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -98,4 +100,65 @@ select {
 
 * {
   font-size: inherit;
+}
+
+/* hero background image */
+.hero_container {
+  background-image: url("images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 538px;
+  width: min(100%, 500px);
+}
+
+.hero_container::before {
+  content: "";
+  background-image: url("images/icon-arrow-down.svg");
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  width: 30px;
+  height: 107px;
+}
+
+/* header */
+header {
+  padding: 16px 16px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  width: 124;
+  height: 24;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  font-family: var(--ff-primary-100);
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-400);
+}
+
+/* main - hero */
+main {
+  padding: 0 16px 0 16px;
+}
+
+main h1 {
+  font-family: var(--ff-primary-200);
+  font-weight: var(--fw-black);
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-900);
+  text-align: center;
+  margin-top: 80px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  line-height: 1.3;
 }
