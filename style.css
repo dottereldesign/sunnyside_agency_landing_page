@@ -20,10 +20,13 @@
   --fs-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
   --fs-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
 
-  /* - Family: [Barlow](https://fonts.google.com/specimen/Barlow)
-- Weights: 600
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700, 900 */
+  --ff-primary-100: "Barlow", sans-serif;
+  --ff-primary-200: "Fraunces", serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
