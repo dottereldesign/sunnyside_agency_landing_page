@@ -103,23 +103,27 @@ select {
 }
 
 /* hero background image */
-.hero_container {
-  background-image: url("images/mobile/image-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 538px;
-  width: min(100%, 500px);
-}
 
 .hero_container::before {
   content: "";
   background-image: url("images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   z-index: 100;
-  bottom: 0;
+  bottom: 120px;
+  left: 50%;
   width: 30px;
   height: 107px;
 }
+
+.hero_bg-img {
+  left: 0;
+  top: 0;
+}
+
+/* try turning bg and sibling into grid parent */
+/* create rows to position the arrow */
 
 /* header */
 header {
