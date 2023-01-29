@@ -104,22 +104,47 @@ select {
 
 /* hero background image */
 
-.hero_container::before {
+.hero_bg {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 80px 1fr auto;
+  background-color: #3ec0ff;
+  position: relative;
+}
+
+header {
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: #3ec0ff;
+}
+
+main {
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  z-index: 1000;
+}
+
+.hero_bg-img {
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.hero_bg::before {
   content: "";
   background-image: url("images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   z-index: 100;
-  bottom: 120px;
-  left: 50%;
-  width: 30px;
-  height: 107px;
-}
-
-.hero_bg-img {
   left: 0;
-  top: 0;
+  right: 0;
+  margin: auto;
+  bottom: 150px;
+  width: 50px;
+  height: 133px;
 }
 
 /* try turning bg and sibling into grid parent */
@@ -134,8 +159,8 @@ header {
 }
 
 .header_logo {
-  width: 124;
-  height: 24;
+  width: 124px;
+  height: 24px;
 }
 
 nav ul {
@@ -161,7 +186,7 @@ main h1 {
   color: var(--clr-neutral-500);
   font-size: var(--fs-900);
   text-align: center;
-  margin-top: 80px;
+  margin-top: 60px;
   text-transform: uppercase;
   letter-spacing: 8px;
   line-height: 1.3;
