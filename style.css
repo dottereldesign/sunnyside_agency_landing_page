@@ -178,8 +178,8 @@ main {
     object-fit: cover;
     object-position: 100% 100%;
     overflow: hidden;
-    height: 1080px;
-    max-height: 1000px;
+    height: 750px;
+    max-height: 750px;
     position: relative;
   }
 
