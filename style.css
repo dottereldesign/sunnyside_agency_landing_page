@@ -479,6 +479,7 @@ main h1 {
   text-align: center;
   color: var(--clr-neutral-200);
   font-weight: var(--fw-medium);
+  max-inline-size: 70ch;
 }
 
 .testimonials_card > img {
@@ -503,4 +504,20 @@ main h1 {
   font-family: var(--ff-primary-100);
   font-size: var(--fs-400);
   margin: 8px 0 24px 0;
+}
+
+@media (min-width: 1432px) {
+  .testimonials_grid {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    width: 1432px;
+    margin: 0 auto;
+    padding: 0 16px 0 16px;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .testimonials p {
+    padding: 0;
+  }
 }
