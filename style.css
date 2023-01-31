@@ -509,15 +509,35 @@ main h1 {
 @media (min-width: 1432px) {
   .testimonials_grid {
     display: grid;
-    grid-template-columns: 450px 450px 450px;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 1432px;
     margin: 0 auto;
     padding: 0 16px 0 16px;
     justify-content: center;
-    gap: 24px;
+    gap: 48px;
+  }
+
+  .testimonials {
+    margin-top: 128px;
   }
 
   .testimonials p {
     padding: 0;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 1440px;
+  margin: 64px auto 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 128px;
   }
 }
