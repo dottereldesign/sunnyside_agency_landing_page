@@ -382,6 +382,12 @@ main h1 {
 }
 
 /* card 03 */
+.card_03 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card_03-1 {
   position: relative;
 }
@@ -458,7 +464,6 @@ main h1 {
 }
 
 /* testimonials */
-
 .testimonials_card {
   display: flex;
   flex-direction: column;
@@ -608,4 +613,42 @@ p {
     brightness(206%) contrast(107%);
   filter: invert(94%) sepia(6%) saturate(0%) hue-rotate(53deg) brightness(206%)
     contrast(107%);
+}
+
+h2 {
+  text-align: center;
+}
+
+.card_learn-link {
+  margin-top: 48px;
+  position: relative;
+}
+
+.card_learn-link a {
+  text-decoration: none;
+  font-family: var(--ff-primary-200);
+  text-transform: uppercase;
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-500);
+}
+
+.card_learn-link-1::before,
+.card_learn-link-2::before {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: -9px;
+  width: 170px;
+  height: 10px;
+  border-radius: 24px;
+  z-index: -10;
+}
+
+.card_learn-link-1::before {
+  background-color: var(--clr-primary-200);
+}
+
+.card_learn-link-2::before {
+  background-color: var(--clr-primary-100);
 }
