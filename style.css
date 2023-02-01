@@ -550,8 +550,14 @@ footer {
   align-items: center;
 }
 
-footer img {
-  margin-top: 64px;
+footer > img {
+  margin-top: 80px;
+  width: 170px;
+  height: 33px;
+  -webkit-filter: invert(27%) sepia(66%) saturate(334%) hue-rotate(116deg)
+    brightness(50%) contrast(91%);
+  filter: invert(27%) sepia(66%) saturate(334%) hue-rotate(116deg)
+    brightness(50%) contrast(91%);
 }
 
 footer ul {
@@ -559,7 +565,8 @@ footer ul {
   margin: 0;
   gap: 32px;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 48px;
+  padding: 0;
 }
 
 footer ul li {
@@ -573,5 +580,10 @@ footer ul li {
 .footer_icons {
   display: flex;
   gap: 32px;
-  margin-bottom: 64px;
+  margin: 80px 0 64px 0;
+}
+
+p {
+  max-inline-size: 60ch;
+  text-align: center;
 }
