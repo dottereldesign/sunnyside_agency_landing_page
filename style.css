@@ -132,6 +132,10 @@ main {
   z-index: 1000;
 }
 
+.bg_clr {
+  background-color: #3ec0ff;
+}
+
 .hero_bg::before {
   content: "";
   background-image: url("images/icon-arrow-down.svg");
@@ -530,7 +534,7 @@ main h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  max-width: 1440px;
+  max-width: 720px;
   margin: 64px auto 0 auto;
 }
 
@@ -539,6 +543,7 @@ main h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 128px;
+    max-width: 1440px;
   }
 }
 
@@ -575,6 +580,16 @@ footer ul li {
   list-style-type: none;
   color: var(--clr-primary-300);
   font-weight: var(--fw-medium);
+  cursor: pointer;
+}
+
+footer a {
+  color: var(--clr-primary-300);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
 }
 
 .footer_icons {
@@ -586,4 +601,11 @@ footer ul li {
 p {
   max-inline-size: 60ch;
   text-align: center;
+}
+
+.footer_icons img:hover {
+  -webkit-filter: invert(94%) sepia(6%) saturate(0%) hue-rotate(53deg)
+    brightness(206%) contrast(107%);
+  filter: invert(94%) sepia(6%) saturate(0%) hue-rotate(53deg) brightness(206%)
+    contrast(107%);
 }
